@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <section class="calculter-wrapper">
+      <h3 style="margin-top: 10px">SAAD ANWAR</h3>
+      <div class="error-indicater"></div>
+
+      <div class="display">RESULY WILL DISPLAY HERE</div>
+
+      <section class="button-wrapper">
+        <div onclick="joinExpression('1')" class="button glass-button">1</div>
+
+        <div onclick="joinExpression('2')" class="button glass-button">2</div>
+        <div onclick="joinExpression('3')" class="button water-button">3</div>
+        <div onclick="joinExpression('+')" class="button operational-button">
+          +
+        </div>
+        <div onclick="joinExpression('4')" class="button glass-button">4</div>
+        <div onclick="joinExpression('5')" class="button water-button">5</div>
+        <div onclick="joinExpression('6')" class="button glass-button">6</div>
+        <div onclick="joinExpression('-')" class="button operational-button">
+          -
+        </div>
+        <div onclick="joinExpression('7')" class="button water-button">7</div>
+        <div onclick="joinExpression('8')" class="button glass-button">8</div>
+        <div onclick="joinExpression('9')" class="button water-button">9</div>
+        <div onclick="joinExpression('*')" class="button operational-button">
+          *
+        </div>
+        <div onclick="joinExpression('0')" class="button glass-button">0</div>
+        <div
+          onclick="displayResult(false)"
+          class="button equal-btn water-button"
+        >
+          =
+        </div>
+        <div onclick="joinExpression('/')" class="button operational-button">
+          /
+        </div>
+      </section>
+
+      <section class="user-input-wrapper">
+        <input
+          type="text"
+          name="user-input"
+          id="user-input"
+          class="user-input"
+          placeholder="&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ENTER ANY VALID EXPRESSION HERE like 1+3+4"
+        />
+        <div onclick="displayResult(true)" class="enter-button water-button">
+          ENTER
+        </div>
+      </section>
+    </section>
+    <script src="/main.js"></script>
+  </body>
+</html>
